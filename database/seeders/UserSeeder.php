@@ -15,6 +15,5 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         DB::table('users')->insert(["username"=>'admin',"name"=>'Admin',"password"=>md5('admin123')]);
-        DB::table('users')->insert(["username"=>'Amel',"name"=>'Amelia dianti',"password"=>md5('130607')]);
     }
 }
